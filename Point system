@@ -1,0 +1,55 @@
+import java.util.scanner;
+public class paypal
+{
+static Scanner sc = new Scanner(System.in);
+
+static public void main(String[] args)
+{
+int user_bal=100000,user_gold,user_silver,user_bronze;	//assuming by default user having bank balance before he buys the points
+int gold=10000,silver=5000,bronze=1000;	//instead of ‘point’ I just used these words
+int object1=50000,object2=15000,object3=7000; //these r some products going to be sold and 								no matter whatever the cost is, if a product is 12,500
+						we can declare another point system worth $500 and 							deduction will be “ $10,000 + 2 × $1,000 + $500
+System.out.println("Welcome to New Point system of paypal”);
+System.out.println(”\n To trade any product you should use pointing system instead of money \n Each point having worth which leads to some following advantages \n \t 1.No taxes for the product which you buy or sell using points (but a few amount will be accounted for tax only during buying the points) \n \t 2.Points are valid lifelong. \n \t 3.Since money through bank transaction differs for different banks and delay problems, this introduce common system(no matter the cost is in dolor or pound or in euro) once you buy points you can use it for any ecommerce system in particular entity(eg.paypal)”);
+
+System.out.println("\n\n Here the cost the pointing system. Select the point which you want to buy
+	\n GOLD = $10,000
+	\n SILVER = $5,000
+	\n BRONZE = $1,000”);
+System.out.println("Enter the number of GOLD points which you need to buy: “);
+user_gold = sc.nextInt();
+
+Balance = balance-(user_gold* gold);
+System.out.println(”Enter the number of SILVER points which you need to buy: “);
+user_silver = sc.nextInt();
+Balance = balance-(user_silver* silver);
+System.out.println(”Enter the number of BRONZE points which you need to buy: “);
+user_bronze = sc.nextInt();
+Balance = balance-(user_bronze* bronze);
+System.out.println(”BALANCE= $ “ + balance); 
+System.out.println(”Gold=”<<user_gold);
+System.out.println(”\nSILVER=”<<user_silver);
+System.out.println(”\nBronze=”<<user_Bronze”);
+// Buying the product
+
+System.out.println(”Choose the product which you want to buy \n 1.object1 ($50,000 or) \n 2.object2 ($15,000) \n 3.object3($7,000)” );
+int x = sc.nextInt();;
+Switch(x)
+{
+Case1:user_gold=user_gold – 5;
+Break;
+Case2: user_gold=user_gold – 1;
+            user_silver=user_silver – 1;
+break;
+case3: user_silver=user_silver – 1;
+           user_bronze=user_bronze – 2;
+}
+
+
+System.out.println(”BALANCE= $ “ + balance); 
+System.out.println(”Gold=”<<user_gold);
+System.out.println(”\nSILVER=” + user_silver);
+System.out.println(”\nBronze=”<<user_Bronze”);
+
+}
+}
